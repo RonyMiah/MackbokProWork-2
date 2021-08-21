@@ -1,3 +1,5 @@
+// Variable Name Id 
+
 const ramEightGB = document.getElementById('ram8GB');
 const ramSixtenGB = document.getElementById('ram16GB');
 const storage256GB = document.getElementById('storage256GB');
@@ -9,15 +11,14 @@ const coponInput = document.getElementById('copon-input');
 const coponButton = document.getElementById('copon-button')
 
 
-
+// Input Value and Update Price  Function
 
 function priceUpdate(newLocation, price) {
     const location = document.getElementById(newLocation)
     location.innerText = price;
 }
 
-
-
+// Total Update  Function 
 
 function totalUpdate(laptopId, memoryId, storageId, deliveryId, displayId) {
     const costForLaptop = document.getElementById(laptopId).innerText;
@@ -32,7 +33,7 @@ function totalUpdate(laptopId, memoryId, storageId, deliveryId, displayId) {
     totalAll.innerText = total;
 }
 
-// Copon Function 
+// Copon Function With Stevekaku 
 
 function coponCard() {
     const coponInput = document.getElementById('copon-input');
@@ -51,16 +52,7 @@ function coponCard() {
     } else {
         lastTotal.innerText = currentTotalAmount;
     }
-
-
 }
-
-
-
-
-
-
-
 
 
 // Add Even Lisaner 
