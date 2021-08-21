@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mack Bok Apple </title>
+    <!-- Tailwind Link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="grid grid-cols-2 gap-4 container mt-16	">
+            <div>
+                <img class="w-7/12  mx-auto" src="images/mac.png" alt="">
+            </div>
+            <div>
+                <h1	class="text-5xl	font-bold  ">Customize Your Blue 24-inch iMac With Apple M1 Chip. </h1>
+                <p class="text-2xl mt-5">Apple M1 Chip with 8-core CPU with 4 perfomance cores and 4 efficiency cores, 7-core GPU , and 16-core Neural Engine 8 GB unified memory 256 GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse  Magic Keybord- US English   </p>
+                
+                <!-- Memory Section  -->
+                <section>
+                    <div>
+                        <h3 class="text-2xl	font-bold mt-10 ">Memory</h3>
+                        <button class="text-2xl mt-5 border-2 border-gray-600 p-3 rounded hover:bg-gray-700 hover:text-white font-semibold " id="ram8GB">8GB Unified memory</button>
+                        <button class="text-2xl mt-5 border-2 border-gray-600 p-3 rounded ml-16 hover:bg-gray-700 hover:text-white font-semibold" id="ram16GB">16 GB Unified memory</button>
+                    </div>
+                </section>
+
+                <!-- Storage Section  -->
+                
+                <section>
+                    <h3 class="text-2xl	font-bold mt-10 ">Storage</h3>
+                <div class=" grid grid-cols-3 gap-2">
+                    <button class="text-2xl mt-5 border-2 border-gray-600 p-3 rounded hover:bg-gray-700 hover:text-white font-semibold " id="storage256GB">256GB SSD Storage </button>
+                    <button class="text-2xl mt-5 border-2 border-gray-600 p-3 rounded hover:bg-gray-700 hover:text-white font-semibold"  id="storage512GB">512GB SSD Storage</button>
+                    <button class="text-2xl mt-5 border-2 border-gray-600 p-3 rounded  hover:bg-gray-700 hover:text-white font-semibold"  id="storage1TB">1TB  SSD Storage</button>
+                </div>
+
+                </section>
+                <!-- Delevari section  -->
+                <section>
+                    <h3 class="text-2xl	font-bold mt-10 ">Memory</h3>
+                    <div class="grid grid-cols-2 gap-2 my-10">
+                        <button class="text-2xl mt-5 border-2 border-gray-600  rounded hover:bg-gray-700 hover:text-white py-3 " id="freeDelivary">Friday, Aug 25 Free prime Delivary </button>
+                        <button class="text-2xl mt-5 border-2 border-gray-600  rounded  hover:bg-gray-700 hover:text-white py-3"  id="paidDelivary">Friday Aug 21 Delevary Charge $20 </button>
+                    </div>
+                </section>
+
+                <!-- Price Section -->
+                <section>  
+                    <table class="table-auto">
+                        <tr class="border-b-2 border-gray-300 text-3xl">
+                            <td class="font-bold py-2 px-2">Best Price</td>
+                            <td class="pl-8 py-2 text-gray-800 px-2 font-bold">$ <span id="cost-laptop">1299</span></td>
+                        </tr>
+                        <tr class="border-b-2 border-gray-300 text-3xl">
+                            <td class="font-bold py-2 px-2">Extra Memory Cost</td>
+                            <td class="pl-8 py-2 text-gray-800 px-2 font-bold">$ <span id="cost-memory">0</span></td>
+                        </tr>
+                        <tr class="border-b-2 border-gray-300 text-3xl">
+                            <td class="font-bold py-2 px-2">Extra Storage Cost</td>
+                            <td class="pl-8 py-2 text-gray-800 px-2 font-bold">$ <span id="cost-storage">0</span></td>
+                        </tr>
+                        <tr class="border-b-2 border-gray-700 text-3xl">
+                            <td class="font-bold py-2 px-2">Delivery Charge</td>
+                            <td class="pl-8 py-2 text-gray-800 px-2 font-bold">$ <span id="cost-delivery">0</span></td>
+                        </tr>
+                        <tr class="border-b-2 border-gray-300 text-3xl">
+                            <td class="font-bold py-2 px-2">Total Price</td>
+                            <td class="pl-8 py-2 text-gray-800 px-2 font-bold">$ <span id="total">1299</span></td>
+                        </tr>
+                    </table>
+
+                    <!-- Pomo Code Section  -->
+
+                    <h2 class="text-2xl font-bold mt-10">Add Pomo Code </h2>
+                    <input class="text-2xl  border p-3" id="copon-input" type="text"> 
+                    <button class="text-2xl  border px-5 py-3 bg-red-400 rounded my-10" id="copon-button">Apply </button>
+                    <hr>
+                 
+                </section>
+
+
+                
+            </div>
+        </section>
+         <hr>
+         <h1 class="mt-5 text-center text-4xl font-bold">Total : $ <span id="totalFinal"></span></h1>
+
+    </main>
+
+    
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
